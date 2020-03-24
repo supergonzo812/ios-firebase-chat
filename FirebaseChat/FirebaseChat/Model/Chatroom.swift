@@ -11,13 +11,13 @@ import MessageKit
 import FirebaseCore
 import FirebaseDatabase
 
-class Chatroom: Codable {
+class Chatroom: Codable, Equatable {
     
     let title: String
     var messages: [Message]
     let identifier: String
     
-    init(title: String, messages: [Message], identifier: String = UUID().uuidString) {
+    init(title: String, messages: [Message] = [], identifier: String = UUID().uuidString) {
         self.title = title
         self.messages = messages
         self.identifier = identifier
@@ -38,6 +38,11 @@ class Chatroom: Codable {
         }
         self.title = title
         self.identifier = identifier
+    }
+    
+    static func ==(lhs: Chatroom, rhs: Chatroom) -> Bool {
+        return lhs.title == rhs.title &&
+            lhs.identifier == rhs.identifier
     }
     
 }

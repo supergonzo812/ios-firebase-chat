@@ -11,7 +11,7 @@ import MessageKit
 import FirebaseCore
 import FirebaseDatabase
 
-struct Message: Codable {
+struct Message: Codable, Equatable {
     
     // MARK: - Properties
     
@@ -81,7 +81,9 @@ struct Message: Codable {
 //    func convertToMessage(from dictionary: ) {
 //        
 //    }
-    
+    static func ==(lhs: Message, rhs: Message) -> Bool {
+        return lhs.message == rhs.message
+    }
 }
 
 struct Sender: SenderType {

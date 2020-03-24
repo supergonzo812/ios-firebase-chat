@@ -11,4 +11,5 @@ import Foundation
 
 struct Keys {
     static var messageDetailSegue: String = "MessageDetailSegue"
+    static let baseURL = URL(string: "https://lambdatestdatabase.firebaseio.com/")!
 }
