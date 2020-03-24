@@ -11,7 +11,7 @@ import MessageKit
 import FirebaseCore
 import FirebaseDatabase
 
-struct Message {
+struct Message: Codable {
     
     // MARK: - Properties
     
@@ -59,6 +59,8 @@ struct Message {
                   timestamp: timestamp)
     }
     
+    // MARK: - Methods
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: MessageKeys.self)
         
@@ -70,8 +72,15 @@ struct Message {
                              forKey: .displayName)
         try container.encode(timestamp,
                              forKey: .timestamp)
-
     }
+    
+//    func convertToDictionary(sender: Sender){
+//        
+//    }
+//    
+//    func convertToMessage(from dictionary: ) {
+//        
+//    }
     
 }
 
