@@ -16,6 +16,8 @@
 		72C9FE2D242AA37A00710AF5 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9FE2C242AA37A00710AF5 /* MessagesTableViewController.swift */; };
 		72C9FE2F242AA3E300710AF5 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9FE2E242AA3E300710AF5 /* MessagesViewController.swift */; };
 		72C9FE32242AA41B00710AF5 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9FE31242AA41B00710AF5 /* Keys.swift */; };
+		72C9FE35242AA4C500710AF5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9FE34242AA4C400710AF5 /* Message.swift */; };
+		72C9FE37242AA4D000710AF5 /* Chatroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9FE36242AA4D000710AF5 /* Chatroom.swift */; };
 		DCF12F7A2F0386F031B04C0E /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2FFC49146AC7423DBAC550 /* Pods_FirebaseChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		72C9FE2C242AA37A00710AF5 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		72C9FE2E242AA3E300710AF5 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		72C9FE31242AA41B00710AF5 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		72C9FE34242AA4C400710AF5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		72C9FE36242AA4D000710AF5 /* Chatroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatroom.swift; sourceTree = "<group>"; };
 		AB7C2F9D11E4387A1E689884 /* Pods-FirebaseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,7 @@
 		72C9FE12242A99D900710AF5 /* FirebaseChat */ = {
 			isa = PBXGroup;
 			children = (
+				72C9FE33242AA4AF00710AF5 /* Model */,
 				72C9FE2B242AA30B00710AF5 /* ViewControllers */,
 				72C9FE2A242AA27D00710AF5 /* Resources */,
 			);
@@ -106,6 +111,15 @@
 				72C9FE2E242AA3E300710AF5 /* MessagesViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72C9FE33242AA4AF00710AF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72C9FE34242AA4C400710AF5 /* Message.swift */,
+				72C9FE36242AA4D000710AF5 /* Chatroom.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8018DE9986C188398167D138 /* Frameworks */ = {
@@ -235,7 +249,9 @@
 				72C9FE14242A99D900710AF5 /* AppDelegate.swift in Sources */,
 				72C9FE2D242AA37A00710AF5 /* MessagesTableViewController.swift in Sources */,
 				72C9FE2F242AA3E300710AF5 /* MessagesViewController.swift in Sources */,
+				72C9FE35242AA4C500710AF5 /* Message.swift in Sources */,
 				72C9FE16242A99D900710AF5 /* SceneDelegate.swift in Sources */,
+				72C9FE37242AA4D000710AF5 /* Chatroom.swift in Sources */,
 				72C9FE32242AA41B00710AF5 /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
